@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import Example from './examples'
 import {widget, utils} from '../../ref'
 
 class BusinessScene extends Component {
@@ -15,9 +14,6 @@ class BusinessScene extends Component {
                 <widget.TitleBar
                     navigation={this.props.navigation}
                     title='业务组件'
-                />
-                <Example
-                    navigation={this.props.navigation}
                 />
             </View>
         )

@@ -76,6 +76,17 @@ class BusinessExamples extends Component {
                 }}>
                     <Label style={{color: '#8a6d3b', fontSize: 16, paddingLeft: 8}} text='Pushy热更新'/>
                 </Button>
+
+                {/*Redux测试*/}
+                <Button style={{
+                    backgroundColor: '#rgba(238, 169, 91, 0.1)',
+                    margin: 8,
+                    borderColor: '#8a6d3b'
+                }} onPress={() => {
+                    this.props.navigation.navigate('ReduxExample')
+                }}>
+                    <Label style={{color: '#8a6d3b', fontSize: 16, paddingLeft: 8}} text='Redux测试'/>
+                </Button>
             </View>
         )
     }

@@ -30,6 +30,7 @@ import LinkedExample from '../../../example/business/examples/LinkedExample'
 import ExceptionExample from '../../../example/business/examples/ExceptionExample'
 import PositionExample from '../../../example/business/examples/PositionExample'
 import PushyExample from '../../../example/business/examples/PushyExample'
+import ReduxExample from '../../../example/business/examples/ReduxExample'
 
 const INDEX = {
     INDEX: {screen: IndexScene}
@@ -81,6 +82,7 @@ const BusinessPages = {
     ExceptionExample: {screen: ExceptionExample},
     PositionExample: {screen: PositionExample},
     PushyExample: {screen: PushyExample},
+    ReduxExample: {screen: ReduxExample}
 };
 
 const Navigator = StackNavigator(

@@ -1,4 +1,8 @@
 import {combineReducers} from 'redux';
-let MainReducer = combineReducers({});
+import test from './test'
+
+let MainReducer = combineReducers({
+    test
+});
 
 module.exports = MainReducer;
