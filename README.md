@@ -6,7 +6,7 @@
 > 4. 开发流程
 
 ## 代码组织说明
-![image](https://github.com/MIFind/rn-template-infore/blob/master/image/r1.png)
+![image](./image/r1.png)
 ## 组织思路
 ![image](https://github.com/MIFind/rn-template-infore/blob/master/image/r2.png)
 ## 依赖包
