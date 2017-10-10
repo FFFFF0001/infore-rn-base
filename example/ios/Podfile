@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'InforeENVBase2' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+  pod 'RSKImageCropper'
+  pod 'QBImagePickerController'
+  # Pods for InforeENVBase2
+
+  target 'InforeENVBase2-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'InforeENVBase2Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

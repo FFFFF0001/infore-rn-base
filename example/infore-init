@@ -1,0 +1,57 @@
+#!/bin/bash
+cat << EOF
+******** 盈峰环境移动团队 ********
+******** ReactNative平台框架，其他平台无法使用该脚手架 ********
+******** 平台NPM：https://www.npmjs.com/package/react-native-template-infore ********
+(1) 生成特定版本（推荐0.44.3稳定版）
+(2) 生成最新版本（不保证稳定）
+(3) Exit Menu
+EOF
+read -p "请输入1-3进行选择: " input
+case $input in
+1)
+function initrnbase() {
+        echo "请输入项目名称(英文字符):"
+        read projectname
+        if  [ ! -n "$projectname" ] ;then
+            echo "您输入的项目名为空，请重新输入:"
+            initrnbase
+        else
+            echo "请输入项目版本号:"
+            read rnversion
+            if  [ ! -n "$rnversion" ] ;then
+                echo "您输入的版本号为空，请重新输入:"
+                read rnversion2
+                 if  [ ! -n "$rnversion2" ] ;then
+                      echo "你输入的版本号为空，即将生成最新版本应用"
+                      react-native init $projectname  --template infore
+                 else
+                      echo "即将生成项目，rn版本号为$rnversion2"
+                      react-native init $projectname  --template infore --version $rnversion2
+                 fi
+            else
+                echo "即将生成项目，rn版本号为$rnversion"
+                react-native init $projectname  --template infore --version $rnversion
+            fi
+        fi
+}
+initrnbase
+;;
+2)
+function initrnbase() {
+        echo "请输入项目名称(英文字符):"
+        read projectname
+        if  [ ! -n "$projectname" ] ;then
+            echo "您输入的项目名为空，请重新输入"
+            initrnbase
+        else
+            echo "即将生成最新版本应用"
+            react-native init $projectname  --template infore
+        fi
+}
+initrnbase
+;;
+3)
+ echo "#####欢迎再次使用脚本#####"
+;;
+esac
