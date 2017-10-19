@@ -24,6 +24,24 @@
 此时需要执行图中的命令。
 > 然后需要手动将这几个包进行配置（Android和IOS都需要配置）
 ![image](./image/r7.png)
+* 这几个库看github上的配置即可，注意Android、IOS的权限配置。
+* IOS配置完pod之后即可运行在手机，注意要配置Camera和Photo的权限。
+```$xslt
+<key>NSCameraUsageDescription</key>
+<string></string>
+<key>NSMicrophoneUsageDescription</key>
+<string></string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string></string>
+```
+
+> * 项目生成之后既与框架包脱离关系属于独立项目，自己可随意改动。
+
+> * Android 和 IOS 的打包和运行自己Google，不做过多说明。
+
+> * 热更新暂未引入，如需使用见example示例，或者使用code-push
+
+> * 项目内example为示例代码，react-native-template-infore为框架包，在npm上维护，如需升级请通过``npm publish --registry http://registry.npmjs.org ``指令进行包管理。
 
 ## 最后
 项目已经移交npm<link>https://www.npmjs.com/react-native-template-infore</link>
