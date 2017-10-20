@@ -22,11 +22,18 @@
 > 3. 在脚本文件中已经进行了react-native link 的操作，但是可能会出现一个警告：
 ![image](./image/r6.png)
 此时需要执行图中的命令。
-> 然后需要手动将这几个包进行配置（Android和IOS都需要配置）
+> 4. 然后需要手动将这几个包进行配置（Android和IOS都需要配置）
+> * 这几个库看github上的配置即可，注意Android、IOS的权限配置。
 ![image](./image/r7.png)
-* 这几个库看github上的配置即可，注意Android、IOS的权限配置。
+> 5. 注意pod配置
+```
+target 'DemoNewVersion' do
+    pod 'RSKImageCropper'
+    pod 'QBImagePickerController'
+end
+``` 
 * IOS配置完pod之后即可运行在手机，注意要配置Camera和Photo的权限。
-```$xslt
+```
 <key>NSCameraUsageDescription</key>
 <string></string>
 <key>NSMicrophoneUsageDescription</key>
